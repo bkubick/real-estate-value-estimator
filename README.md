@@ -1,16 +1,12 @@
 # Real Estate Evaluator
-  Brandon Kubick (bjk2158@columbia.edu)
+  Brandon Kubick
 
 
 ### Problem to Solve
-The purpose of this project consisted of two parts. The first was creating a data pipeline to generate, transform, and ingest data into a MySQL database that can be used later on as I continue this project. The second part was implementing machine learning to predict house values based off  employment and housing data. Each machine learning model was tested by combining all cities into a single regional data set or treating each city as its own independent data set. The data used in this project included housing data scraped from Homes.com and employment data grabbed from the Bureau of Labor Statistics API. The paper paired with this project only highlights my first analysis done which analyzed each regional area using both employment data and housing data combined for the model training set, however, various other analyses were done and are shown in the python notebook talked about in this README file. This is an ongoing project that I plan to develop throughout my career which the overall goal was to start a baseline for this project with just housing data and economic data. It also included the database design because I plan to continue to grow this data in which the most organized structure is putting it into a database.
+The purpose of this project consisted of two parts. The first was creating a data pipeline to generate, transform, and ingest data into a MySQL database that can be used later on as I continue this project. The second part was implementing machine learning to predict house values based off  employment and housing data. Each machine learning model was tested by combining all cities into a single regional data set or treating each city as its own independent data set. The data used in this project included housing data scraped from Homes.com and employment data grabbed from the Bureau of Labor Statistics API.
 
 #### Important Notes:
--If any problems arise in the setup, please feel free to contact me at bjk2158@columbia.edu and I will be sure to get back to you to solve any problems or give an explanation.
-
-- The paper in the zip file only includes some of the plots and highlights the results mentioned in the problem to solve section. To see the rest of the plots, follow the initial setup steps in this README file and only run the notebook 'PricePredictorMain.ipynb' from a jupyter notebook.
-
-- This entire project was created using a Macbook Air with Python 3.1.
+- This entire project was created using Python 3.1.
 
 - The cleaned and processed data is already generated and located in the data files in the zip. To analyze the machine learning, just run a jupyter notebook in the 'RealEstate' directory and run the notebook in the 'RealEstate/scripts' directory, 'PricePredictorMain.ipynb', to see the plots and results after setting up the project. Note that it takes a while to run the whole notebook and this notebook includes a significant amount of information that wasnt gone over in complete detail in the paper due to the word limit.
 
@@ -38,10 +34,12 @@ The purpose of this project consisted of two parts. The first was creating a dat
         $ mkdir RealEstate
 
   2. Now once the RealEstate directory is created, do the following in a terminal.
+  
+        $ pip install virtualenv
 
         $ cd RealEstate
 
-        $ virtualenv --python=python3 env
+        $ virtualenv env --python=python3
 
         $ . ./env/bin/activate
 

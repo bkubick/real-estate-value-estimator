@@ -2,6 +2,10 @@
   Brandon Kubick
 
 
+### NOTE:
+This repository is extremely out of date! This was one of my first python projects and I have not come back to clean it up and update it! I plan to completely refactor this in the near future and will delete this note once I do!
+
+
 ### Problem to Solve
 The purpose of this project consisted of two parts. The first was creating a data pipeline to generate, transform, and ingest data into a MySQL database that can be used later on as I continue this project. The second part was implementing machine learning to predict house values based off  employment and housing data. Each machine learning model was tested by combining all cities into a single regional data set or treating each city as its own independent data set. The data used in this project included housing data scraped from Homes.com and employment data grabbed from the Bureau of Labor Statistics API.
 
